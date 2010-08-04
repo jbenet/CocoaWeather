@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D948840B11A0D547007BC8E7 /* Build & Merge Libraries */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D948841211A0D583007BC8E7 /* Build configuration list for PBXAggregateTarget "Build & Merge Libraries" */;
+			buildPhases = (
+				D948841411A0D591007BC8E7 /* ShellScript */,
+			);
+			dependencies = (
+				D948840F11A0D551007BC8E7 /* PBXTargetDependency */,
+				D948841111A0D551007BC8E7 /* PBXTargetDependency */,
+			);
+			name = "Build & Merge Libraries";
+			productName = "Build & Merge Libraries";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* CocoaWeather_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D9083D321208FE63009B0D91 /* GHUnitIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9083D311208FE63009B0D91 /* GHUnitIPhone.framework */; };
+		D9083D341208FE68009B0D91 /* GHUnitIPhoneTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D9083D331208FE68009B0D91 /* GHUnitIPhoneTestMain.m */; };
+		D948835011A0CFB1007BC8E7 /* CocoaWeather_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */; };
+		D948835311A0CFB1007BC8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D94883B011A0D498007BC8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D94883B211A0D4A3007BC8E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94883B111A0D4A3007BC8E7 /* UIKit.framework */; };
+		D94883B611A0D4C5007BC8E7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D94883B511A0D4C5007BC8E7 /* libsqlite3.0.dylib */; };
+		D948842E11A0E29C007BC8E7 /* CWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948842D11A0E29C007BC8E7 /* CWAPI.m */; };
+		D948843311A0E300007BC8E7 /* CWCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D948843111A0E300007BC8E7 /* CWCache.h */; };
+		D948843411A0E300007BC8E7 /* CWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843211A0E300007BC8E7 /* CWCache.m */; };
+		D948843811A0FFCD007BC8E7 /* CWWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843711A0FFCD007BC8E7 /* CWWeather.m */; };
+		D948843911A0FFCD007BC8E7 /* CWWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843711A0FFCD007BC8E7 /* CWWeather.m */; };
+		D948843A11A0FFCD007BC8E7 /* CWWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843711A0FFCD007BC8E7 /* CWWeather.m */; };
+		D948844311A11346007BC8E7 /* CWGoogleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948844211A11346007BC8E7 /* CWGoogleAPI.m */; };
+		D948844411A11346007BC8E7 /* CWGoogleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948844211A11346007BC8E7 /* CWGoogleAPI.m */; };
+		D948844511A11346007BC8E7 /* CWGoogleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948844211A11346007BC8E7 /* CWGoogleAPI.m */; };
+		D948844D11A144BD007BC8E7 /* CWYahooAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948844C11A144BD007BC8E7 /* CWYahooAPI.m */; };
+		D948844E11A144BD007BC8E7 /* CWYahooAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948844C11A144BD007BC8E7 /* CWYahooAPI.m */; };
+		D948844F11A144BD007BC8E7 /* CWYahooAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948844C11A144BD007BC8E7 /* CWYahooAPI.m */; };
+		D948850811A15A73007BC8E7 /* weather.m in Sources */ = {isa = PBXBuildFile; fileRef = D948850711A15A73007BC8E7 /* weather.m */; };
+		D948850A11A15A7F007BC8E7 /* api.m in Sources */ = {isa = PBXBuildFile; fileRef = D948850911A15A7F007BC8E7 /* api.m */; };
+		D948850C11A15A85007BC8E7 /* google.m in Sources */ = {isa = PBXBuildFile; fileRef = D948850B11A15A85007BC8E7 /* google.m */; };
+		D948850E11A15A8D007BC8E7 /* yahoo.m in Sources */ = {isa = PBXBuildFile; fileRef = D948850D11A15A8D007BC8E7 /* yahoo.m */; };
+		D948851C11A15F1C007BC8E7 /* CWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948842D11A0E29C007BC8E7 /* CWAPI.m */; };
+		D948851D11A15F1C007BC8E7 /* CWCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D948843111A0E300007BC8E7 /* CWCache.h */; };
+		D948851E11A15F1C007BC8E7 /* CWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843211A0E300007BC8E7 /* CWCache.m */; };
+		D948851F11A15F23007BC8E7 /* CWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948842D11A0E29C007BC8E7 /* CWAPI.m */; };
+		D948852011A15F23007BC8E7 /* CWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843211A0E300007BC8E7 /* CWCache.m */; };
+		D948854811A1617C007BC8E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D948854711A1617C007BC8E7 /* CoreGraphics.framework */; };
+		D9A2E52811A6637100F7FA51 /* Locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E52711A6637100F7FA51 /* Locator.m */; };
+		D9A2E73A11A7566300F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
+		D9A2E7CC11AACFF700F7FA51 /* CWAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7C811AACFF700F7FA51 /* CWAPI.h */; };
+		D9A2E7CD11AACFF700F7FA51 /* CWGoogleAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7C911AACFF700F7FA51 /* CWGoogleAPI.h */; };
+		D9A2E7CE11AACFF700F7FA51 /* CWWeather.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7CA11AACFF700F7FA51 /* CWWeather.h */; };
+		D9A2E7CF11AACFF700F7FA51 /* CWYahooAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7CB11AACFF700F7FA51 /* CWYahooAPI.h */; };
+		D9A2E7D011AACFF700F7FA51 /* CWAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7C811AACFF700F7FA51 /* CWAPI.h */; };
+		D9A2E7D111AACFF700F7FA51 /* CWGoogleAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7C911AACFF700F7FA51 /* CWGoogleAPI.h */; };
+		D9A2E7D211AACFF700F7FA51 /* CWWeather.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7CA11AACFF700F7FA51 /* CWWeather.h */; };
+		D9A2E7D311AACFF700F7FA51 /* CWYahooAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7CB11AACFF700F7FA51 /* CWYahooAPI.h */; };
+		D9A2E82A11AADD0000F7FA51 /* locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E82911AADD0000F7FA51 /* locator.m */; };
+		D9A2E93E11AAF91C00F7FA51 /* Locator.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E52611A6637100F7FA51 /* Locator.h */; };
+		D9A2E93F11AAF91C00F7FA51 /* Locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E52711A6637100F7FA51 /* Locator.m */; };
+		D9A2E94011AAF91D00F7FA51 /* Locator.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E52611A6637100F7FA51 /* Locator.h */; };
+		D9A2E94111AAF91D00F7FA51 /* Locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E52711A6637100F7FA51 /* Locator.m */; };
+		D9A2E95411AAF93600F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
+		D9A2E95511AAF93700F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
+		D9F4E6351209D2C50044EABE /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F4E6341209D2C50044EABE /* YAJLIPhone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D948840E11A0D551007BC8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "CocoaWeather iphoneos";
+		};
+		D948841011A0D551007BC8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D948834E11A0CFB1007BC8E7;
+			remoteInfo = "CocoaWeather iphonesim";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaWeather_Prefix.pch; sourceTree = "<group>"; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCocoaWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaWeather.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9083D311208FE63009B0D91 /* GHUnitIPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIPhone.framework; path = "../../gh-unit/Project-IPhone/build/Release-Framework4_0/GHUnitIPhone.framework"; sourceTree = SOURCE_ROOT; };
+		D9083D331208FE68009B0D91 /* GHUnitIPhoneTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitIPhoneTestMain.m; path = "../../gh-unit/Project-IPhone/build/Release-Framework4_0/GHUnitIPhone.framework/Versions/A/Resources/GHUnitIPhoneTestMain.m"; sourceTree = SOURCE_ROOT; };
+		D948835711A0CFB1007BC8E7 /* libCocoaWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaWeather.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D948835C11A0CFE9007BC8E7 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D948835E11A0CFEA007BC8E7 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		D94883B111A0D4A3007BC8E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D94883B511A0D4C5007BC8E7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D948840811A0D503007BC8E7 /* Framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Framework.plist; sourceTree = "<group>"; };
+		D948840911A0D503007BC8E7 /* framework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = framework.sh; sourceTree = "<group>"; };
+		D948842D11A0E29C007BC8E7 /* CWAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAPI.m; sourceTree = "<group>"; };
+		D948843111A0E300007BC8E7 /* CWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWCache.h; sourceTree = "<group>"; };
+		D948843211A0E300007BC8E7 /* CWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWCache.m; sourceTree = "<group>"; };
+		D948843711A0FFCD007BC8E7 /* CWWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWWeather.m; sourceTree = "<group>"; };
+		D948844211A11346007BC8E7 /* CWGoogleAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWGoogleAPI.m; sourceTree = "<group>"; };
+		D948844C11A144BD007BC8E7 /* CWYahooAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWYahooAPI.m; sourceTree = "<group>"; };
+		D948850711A15A73007BC8E7 /* weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weather.m; sourceTree = "<group>"; };
+		D948850911A15A7F007BC8E7 /* api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = api.m; sourceTree = "<group>"; };
+		D948850B11A15A85007BC8E7 /* google.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = google.m; sourceTree = "<group>"; };
+		D948850D11A15A8D007BC8E7 /* yahoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yahoo.m; sourceTree = "<group>"; };
+		D948853611A15FBC007BC8E7 /* Tests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests_Prefix.pch; sourceTree = "<group>"; };
+		D948854711A1617C007BC8E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9A2E52611A6637100F7FA51 /* Locator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locator.h; sourceTree = "<group>"; };
+		D9A2E52711A6637100F7FA51 /* Locator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locator.m; sourceTree = "<group>"; };
+		D9A2E73911A7566300F7FA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D9A2E7C811AACFF700F7FA51 /* CWAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAPI.h; sourceTree = "<group>"; };
+		D9A2E7C911AACFF700F7FA51 /* CWGoogleAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWGoogleAPI.h; sourceTree = "<group>"; };
+		D9A2E7CA11AACFF700F7FA51 /* CWWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWWeather.h; sourceTree = "<group>"; };
+		D9A2E7CB11AACFF700F7FA51 /* CWYahooAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWYahooAPI.h; sourceTree = "<group>"; };
+		D9A2E82911AADD0000F7FA51 /* locator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locator.m; sourceTree = "<group>"; };
+		D9A2E84C11AAEE8200F7FA51 /* CocoaWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaWeather.h; sourceTree = "<group>"; };
+		D9F4E6341209D2C50044EABE /* YAJLIPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAJLIPhone.framework; path = "../../yajl-objc/Project-IPhone/build/Release-Framework/YAJLIPhone.framework"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				D9A2E95411AAF93600F7FA51 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D948835211A0CFB1007BC8E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948835311A0CFB1007BC8E7 /* Foundation.framework in Frameworks */,
+				D9A2E95511AAF93700F7FA51 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D948835A11A0CFE9007BC8E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94883B011A0D498007BC8E7 /* Foundation.framework in Frameworks */,
+				D94883B211A0D4A3007BC8E7 /* UIKit.framework in Frameworks */,
+				D94883B611A0D4C5007BC8E7 /* libsqlite3.0.dylib in Frameworks */,
+				D948854811A1617C007BC8E7 /* CoreGraphics.framework in Frameworks */,
+				D9A2E73A11A7566300F7FA51 /* CoreLocation.framework in Frameworks */,
+				D9083D321208FE63009B0D91 /* GHUnitIPhone.framework in Frameworks */,
+				D9F4E6351209D2C50044EABE /* YAJLIPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCocoaWeather.a */,
+				D948835711A0CFB1007BC8E7 /* libCocoaWeather.a */,
+				D948835C11A0CFE9007BC8E7 /* Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CocoaWeather */ = {
+			isa = PBXGroup;
+			children = (
+				D948834A11A0CF85007BC8E7 /* include */,
+				D948834C11A0CF85007BC8E7 /* lib */,
+				D948834D11A0CF85007BC8E7 /* src */,
+				D94883AF11A0D475007BC8E7 /* test */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				D948835E11A0CFEA007BC8E7 /* Tests-Info.plist */,
+			);
+			name = CocoaWeather;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D94883B111A0D4A3007BC8E7 /* UIKit.framework */,
+				D94883B511A0D4C5007BC8E7 /* libsqlite3.0.dylib */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				D948854711A1617C007BC8E7 /* CoreGraphics.framework */,
+				D9A2E73911A7566300F7FA51 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D948853611A15FBC007BC8E7 /* Tests_Prefix.pch */,
+				AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */,
+				D948840711A0D503007BC8E7 /* resources */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D948834A11A0CF85007BC8E7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D9A2E7C711AACFF700F7FA51 /* CocoaWeather */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D948834C11A0CF85007BC8E7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D9F4E6341209D2C50044EABE /* YAJLIPhone.framework */,
+				D9083D331208FE68009B0D91 /* GHUnitIPhoneTestMain.m */,
+				D9083D311208FE63009B0D91 /* GHUnitIPhone.framework */,
+				D9A2E52611A6637100F7FA51 /* Locator.h */,
+				D9A2E52711A6637100F7FA51 /* Locator.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D948834D11A0CF85007BC8E7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D948842D11A0E29C007BC8E7 /* CWAPI.m */,
+				D948843111A0E300007BC8E7 /* CWCache.h */,
+				D948843211A0E300007BC8E7 /* CWCache.m */,
+				D948843711A0FFCD007BC8E7 /* CWWeather.m */,
+				D948844211A11346007BC8E7 /* CWGoogleAPI.m */,
+				D948844C11A144BD007BC8E7 /* CWYahooAPI.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D94883AF11A0D475007BC8E7 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				D948850711A15A73007BC8E7 /* weather.m */,
+				D948850911A15A7F007BC8E7 /* api.m */,
+				D948850B11A15A85007BC8E7 /* google.m */,
+				D948850D11A15A8D007BC8E7 /* yahoo.m */,
+				D9A2E82911AADD0000F7FA51 /* locator.m */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		D948840711A0D503007BC8E7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D948840811A0D503007BC8E7 /* Framework.plist */,
+				D948840911A0D503007BC8E7 /* framework.sh */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		D9A2E7C711AACFF700F7FA51 /* CocoaWeather */ = {
+			isa = PBXGroup;
+			children = (
+				D9A2E7C811AACFF700F7FA51 /* CWAPI.h */,
+				D9A2E7C911AACFF700F7FA51 /* CWGoogleAPI.h */,
+				D9A2E7CA11AACFF700F7FA51 /* CWWeather.h */,
+				D9A2E7CB11AACFF700F7FA51 /* CWYahooAPI.h */,
+				D9A2E84C11AAEE8200F7FA51 /* CocoaWeather.h */,
+			);
+			path = CocoaWeather;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* CocoaWeather_Prefix.pch in Headers */,
+				D948843311A0E300007BC8E7 /* CWCache.h in Headers */,
+				D9A2E7D011AACFF700F7FA51 /* CWAPI.h in Headers */,
+				D9A2E7D111AACFF700F7FA51 /* CWGoogleAPI.h in Headers */,
+				D9A2E7D211AACFF700F7FA51 /* CWWeather.h in Headers */,
+				D9A2E7D311AACFF700F7FA51 /* CWYahooAPI.h in Headers */,
+				D9A2E94011AAF91D00F7FA51 /* Locator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D948834F11A0CFB1007BC8E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948835011A0CFB1007BC8E7 /* CocoaWeather_Prefix.pch in Headers */,
+				D948851D11A15F1C007BC8E7 /* CWCache.h in Headers */,
+				D9A2E7CC11AACFF700F7FA51 /* CWAPI.h in Headers */,
+				D9A2E7CD11AACFF700F7FA51 /* CWGoogleAPI.h in Headers */,
+				D9A2E7CE11AACFF700F7FA51 /* CWWeather.h in Headers */,
+				D9A2E7CF11AACFF700F7FA51 /* CWYahooAPI.h in Headers */,
+				D9A2E93E11AAF91C00F7FA51 /* Locator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* CocoaWeather iphoneos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CocoaWeather iphoneos" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaWeather iphoneos";
+			productName = CocoaWeather;
+			productReference = D2AAC07E0554694100DB518D /* libCocoaWeather.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D948834E11A0CFB1007BC8E7 /* CocoaWeather iphonesim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D948835411A0CFB1007BC8E7 /* Build configuration list for PBXNativeTarget "CocoaWeather iphonesim" */;
+			buildPhases = (
+				D948834F11A0CFB1007BC8E7 /* Headers */,
+				D948835111A0CFB1007BC8E7 /* Sources */,
+				D948835211A0CFB1007BC8E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaWeather iphonesim";
+			productName = CocoaWeather;
+			productReference = D948835711A0CFB1007BC8E7 /* libCocoaWeather.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D948835B11A0CFE9007BC8E7 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D948836111A0CFEA007BC8E7 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				D948835811A0CFE9007BC8E7 /* Resources */,
+				D948835911A0CFE9007BC8E7 /* Sources */,
+				D948835A11A0CFE9007BC8E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = D948835C11A0CFE9007BC8E7 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CocoaWeather" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* CocoaWeather */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* CocoaWeather iphoneos */,
+				D948834E11A0CFB1007BC8E7 /* CocoaWeather iphonesim */,
+				D948835B11A0CFE9007BC8E7 /* Tests */,
+				D948840B11A0D547007BC8E7 /* Build & Merge Libraries */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D948835811A0CFE9007BC8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D948841411A0D591007BC8E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = resources/framework.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948842E11A0E29C007BC8E7 /* CWAPI.m in Sources */,
+				D948843411A0E300007BC8E7 /* CWCache.m in Sources */,
+				D948843811A0FFCD007BC8E7 /* CWWeather.m in Sources */,
+				D948844411A11346007BC8E7 /* CWGoogleAPI.m in Sources */,
+				D948844E11A144BD007BC8E7 /* CWYahooAPI.m in Sources */,
+				D9A2E94111AAF91D00F7FA51 /* Locator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D948835111A0CFB1007BC8E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948843911A0FFCD007BC8E7 /* CWWeather.m in Sources */,
+				D948844311A11346007BC8E7 /* CWGoogleAPI.m in Sources */,
+				D948844D11A144BD007BC8E7 /* CWYahooAPI.m in Sources */,
+				D948851C11A15F1C007BC8E7 /* CWAPI.m in Sources */,
+				D948851E11A15F1C007BC8E7 /* CWCache.m in Sources */,
+				D9A2E93F11AAF91C00F7FA51 /* Locator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D948835911A0CFE9007BC8E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948843A11A0FFCD007BC8E7 /* CWWeather.m in Sources */,
+				D948844511A11346007BC8E7 /* CWGoogleAPI.m in Sources */,
+				D948844F11A144BD007BC8E7 /* CWYahooAPI.m in Sources */,
+				D948850811A15A73007BC8E7 /* weather.m in Sources */,
+				D948850A11A15A7F007BC8E7 /* api.m in Sources */,
+				D948850C11A15A85007BC8E7 /* google.m in Sources */,
+				D948850E11A15A8D007BC8E7 /* yahoo.m in Sources */,
+				D948851F11A15F23007BC8E7 /* CWAPI.m in Sources */,
+				D948852011A15F23007BC8E7 /* CWCache.m in Sources */,
+				D9A2E52811A6637100F7FA51 /* Locator.m in Sources */,
+				D9A2E82A11AADD0000F7FA51 /* locator.m in Sources */,
+				D9083D341208FE68009B0D91 /* GHUnitIPhoneTestMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D948840F11A0D551007BC8E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* CocoaWeather iphoneos */;
+			targetProxy = D948840E11A0D551007BC8E7 /* PBXContainerItemProxy */;
+		};
+		D948841111A0D551007BC8E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D948834E11A0CFB1007BC8E7 /* CocoaWeather iphonesim */;
+			targetProxy = D948841011A0D551007BC8E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CocoaWeather.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaWeather_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
+				);
+				PRODUCT_NAME = CocoaWeather;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/CocoaWeather.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaWeather_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
+				);
+				PRODUCT_NAME = CocoaWeather;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Release;
+		};
+		D948835511A0CFB1007BC8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CocoaWeather.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaWeather_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
+				);
+				PRODUCT_NAME = CocoaWeather;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = Debug;
+		};
+		D948835611A0CFB1007BC8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/CocoaWeather.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaWeather_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
+				);
+				PRODUCT_NAME = CocoaWeather;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = Release;
+		};
+		D948835F11A0CFEA007BC8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/../../gh-unit/Project-IPhone/build/Release-Framework4_0\"",
+					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tests_Prefix.pch;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = Debug;
+		};
+		D948836011A0CFEA007BC8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/../../gh-unit/Project-IPhone/build/Release-Framework4_0\"",
+					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tests_Prefix.pch;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				SDKROOT = iphonesimulator3.2;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D948840C11A0D548007BC8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "Build & Merge Libraries";
+			};
+			name = Debug;
+		};
+		D948840D11A0D548007BC8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "Build & Merge Libraries";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CocoaWeather iphoneos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CocoaWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D948835411A0CFB1007BC8E7 /* Build configuration list for PBXNativeTarget "CocoaWeather iphonesim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D948835511A0CFB1007BC8E7 /* Debug */,
+				D948835611A0CFB1007BC8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D948836111A0CFEA007BC8E7 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D948835F11A0CFEA007BC8E7 /* Debug */,
+				D948836011A0CFEA007BC8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D948841211A0D583007BC8E7 /* Build configuration list for PBXAggregateTarget "Build & Merge Libraries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D948840C11A0D548007BC8E7 /* Debug */,
+				D948840D11A0D548007BC8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
