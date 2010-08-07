@@ -73,6 +73,7 @@ typedef NSUInteger YAJLGenOptions;
 - (void)bool:(BOOL)b;
 
 - (void)number:(NSNumber *)number;
+- (void)fpNumber:(NSNumber *)number;
 
 - (void)string:(NSString *)s;
 

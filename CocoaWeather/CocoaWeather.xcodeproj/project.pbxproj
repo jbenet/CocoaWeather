@@ -25,8 +25,6 @@
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* CocoaWeather_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		D9083D321208FE63009B0D91 /* GHUnitIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9083D311208FE63009B0D91 /* GHUnitIPhone.framework */; };
-		D9083D341208FE68009B0D91 /* GHUnitIPhoneTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D9083D331208FE68009B0D91 /* GHUnitIPhoneTestMain.m */; };
 		D948835011A0CFB1007BC8E7 /* CocoaWeather_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */; };
 		D948835311A0CFB1007BC8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		D94883B011A0D498007BC8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -54,6 +52,10 @@
 		D948851F11A15F23007BC8E7 /* CWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D948842D11A0E29C007BC8E7 /* CWAPI.m */; };
 		D948852011A15F23007BC8E7 /* CWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843211A0E300007BC8E7 /* CWCache.m */; };
 		D948854811A1617C007BC8E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D948854711A1617C007BC8E7 /* CoreGraphics.framework */; };
+		D986AF3D120CDBD800A07D0D /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3B120CDBD800A07D0D /* GHUnitIOS.framework */; };
+		D986AF3E120CDBD800A07D0D /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */; };
+		D986AF65120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */; };
+		D986AF66120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */; };
 		D9A2E52811A6637100F7FA51 /* Locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E52711A6637100F7FA51 /* Locator.m */; };
 		D9A2E73A11A7566300F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
 		D9A2E7CC11AACFF700F7FA51 /* CWAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7C811AACFF700F7FA51 /* CWAPI.h */; };
@@ -71,7 +73,7 @@
 		D9A2E94111AAF91D00F7FA51 /* Locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E52711A6637100F7FA51 /* Locator.m */; };
 		D9A2E95411AAF93600F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
 		D9A2E95511AAF93700F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
-		D9F4E6351209D2C50044EABE /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F4E6341209D2C50044EABE /* YAJLIPhone.framework */; };
+		D9F4E9C5120AB0AF0044EABE /* testmain.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F4E9C4120AB0AF0044EABE /* testmain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +97,6 @@
 		AA747D9E0F9514B9006C5449 /* CocoaWeather_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaWeather_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libCocoaWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaWeather.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9083D311208FE63009B0D91 /* GHUnitIPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIPhone.framework; path = "../../gh-unit/Project-IPhone/build/Release-Framework4_0/GHUnitIPhone.framework"; sourceTree = SOURCE_ROOT; };
-		D9083D331208FE68009B0D91 /* GHUnitIPhoneTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitIPhoneTestMain.m; path = "../../gh-unit/Project-IPhone/build/Release-Framework4_0/GHUnitIPhone.framework/Versions/A/Resources/GHUnitIPhoneTestMain.m"; sourceTree = SOURCE_ROOT; };
 		D948835711A0CFB1007BC8E7 /* libCocoaWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaWeather.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D948835C11A0CFE9007BC8E7 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D948835E11A0CFEA007BC8E7 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -116,6 +116,8 @@
 		D948850D11A15A8D007BC8E7 /* yahoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yahoo.m; sourceTree = "<group>"; };
 		D948853611A15FBC007BC8E7 /* Tests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests_Prefix.pch; sourceTree = "<group>"; };
 		D948854711A1617C007BC8E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D986AF3B120CDBD800A07D0D /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJLIPhone.framework; sourceTree = "<group>"; };
 		D9A2E52611A6637100F7FA51 /* Locator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locator.h; sourceTree = "<group>"; };
 		D9A2E52711A6637100F7FA51 /* Locator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locator.m; sourceTree = "<group>"; };
 		D9A2E73911A7566300F7FA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -125,7 +127,7 @@
 		D9A2E7CB11AACFF700F7FA51 /* CWYahooAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWYahooAPI.h; sourceTree = "<group>"; };
 		D9A2E82911AADD0000F7FA51 /* locator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locator.m; sourceTree = "<group>"; };
 		D9A2E84C11AAEE8200F7FA51 /* CocoaWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaWeather.h; sourceTree = "<group>"; };
-		D9F4E6341209D2C50044EABE /* YAJLIPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAJLIPhone.framework; path = "../../yajl-objc/Project-IPhone/build/Release-Framework/YAJLIPhone.framework"; sourceTree = SOURCE_ROOT; };
+		D9F4E9C4120AB0AF0044EABE /* testmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testmain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				D9A2E95411AAF93600F7FA51 /* CoreLocation.framework in Frameworks */,
+				D986AF66120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +147,7 @@
 			files = (
 				D948835311A0CFB1007BC8E7 /* Foundation.framework in Frameworks */,
 				D9A2E95511AAF93700F7FA51 /* CoreLocation.framework in Frameworks */,
+				D986AF65120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,8 +160,8 @@
 				D94883B611A0D4C5007BC8E7 /* libsqlite3.0.dylib in Frameworks */,
 				D948854811A1617C007BC8E7 /* CoreGraphics.framework in Frameworks */,
 				D9A2E73A11A7566300F7FA51 /* CoreLocation.framework in Frameworks */,
-				D9083D321208FE63009B0D91 /* GHUnitIPhone.framework in Frameworks */,
-				D9F4E6351209D2C50044EABE /* YAJLIPhone.framework in Frameworks */,
+				D986AF3D120CDBD800A07D0D /* GHUnitIOS.framework in Frameworks */,
+				D986AF3E120CDBD800A07D0D /* YAJLIPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +226,8 @@
 		D948834C11A0CF85007BC8E7 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				D9F4E6341209D2C50044EABE /* YAJLIPhone.framework */,
-				D9083D331208FE68009B0D91 /* GHUnitIPhoneTestMain.m */,
-				D9083D311208FE63009B0D91 /* GHUnitIPhone.framework */,
+				D986AF3B120CDBD800A07D0D /* GHUnitIOS.framework */,
+				D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */,
 				D9A2E52611A6637100F7FA51 /* Locator.h */,
 				D9A2E52711A6637100F7FA51 /* Locator.m */,
 			);
@@ -252,6 +255,7 @@
 				D948850B11A15A85007BC8E7 /* google.m */,
 				D948850D11A15A8D007BC8E7 /* yahoo.m */,
 				D9A2E82911AADD0000F7FA51 /* locator.m */,
+				D9F4E9C4120AB0AF0044EABE /* testmain.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -451,7 +455,7 @@
 				D948852011A15F23007BC8E7 /* CWCache.m in Sources */,
 				D9A2E52811A6637100F7FA51 /* Locator.m in Sources */,
 				D9A2E82A11AADD0000F7FA51 /* locator.m in Sources */,
-				D9083D341208FE68009B0D91 /* GHUnitIPhoneTestMain.m in Sources */,
+				D9F4E9C5120AB0AF0044EABE /* testmain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +484,7 @@
 				DSTROOT = /tmp/CocoaWeather.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+					"\"$(SRCROOT)/lib\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -507,7 +511,7 @@
 				DSTROOT = /tmp/CocoaWeather.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
+					"\"$(SRCROOT)/lib\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -564,7 +568,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
-					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -592,7 +595,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
-					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -617,8 +619,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
-					"\"$(SRCROOT)/../../gh-unit/Project-IPhone/build/Release-Framework4_0\"",
-					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -656,8 +656,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
-					"\"$(SRCROOT)/../../gh-unit/Project-IPhone/build/Release-Framework4_0\"",
-					"\"$(SRCROOT)/../../yajl-objc/Project-IPhone/build/Release-Framework\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
