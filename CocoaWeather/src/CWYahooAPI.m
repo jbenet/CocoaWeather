@@ -28,6 +28,9 @@ static CWYahooAPI *yahoo_singleton = nil;
 {
   int wid = [CWYahooAPI WOEIDForCoordinate:location.coordinate];
   NSLog(@"WOEID: %i", wid);
+  if (wid == 0)
+    return nil;
+
   return [self weatherForURL:[NSString stringWithFormat:@"%@w=%i", kAPI, wid]];
 }
 
@@ -73,7 +76,10 @@ static CWYahooAPI *yahoo_singleton = nil;
   NSDictionary *dict = [res yajl_JSON];
   dict = [[dict valueForKey:@"query"] valueForKey:@"results"];
   dict = [[dict valueForKey:@"places"] valueForKey:@"place"];
-  return [[dict valueForKey:@"woeid"] intValue];
+  id woeid = [dict valueForKey:@"woeid"];
+  if ([woeid isKindOfClass:[NSNumber class]])
+    return [woeid intValue];
+  return 0;
 }
 
 + (int) WOEIDForLocation:(CLLocation *)location
