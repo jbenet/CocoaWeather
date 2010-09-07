@@ -21,7 +21,7 @@
   [out appendFormat:@"%f C, ", self.celsius];
   [out appendFormat:@"%f F,  ", self.fahrenheit];
   [out appendFormat:@"%@ (%i),  ", self.condition, self.conditionCode];
-  [out appendFormat:@"wind: %f %i, ", self.celsius];
+  [out appendFormat:@"wind: %f %i, ", self.windSpeed, self.windDirection];
 
   return out;
 }

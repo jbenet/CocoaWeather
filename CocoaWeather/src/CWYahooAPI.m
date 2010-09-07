@@ -71,9 +71,9 @@ static CWYahooAPI *yahoo_singleton = nil;
   NSString *res = [NSString stringWithContentsOfURL:[NSURL URLWithString:url]
                             encoding:NSUTF8StringEncoding error:NULL];
   NSDictionary *dict = [res yajl_JSON];
-  dict = [[dict objectForKey:@"query"] objectForKey:@"results"];
-  dict = [[dict objectForKey:@"places"] objectForKey:@"place"];
-  return [[dict objectForKey:@"woeid"] intValue];
+  dict = [[dict valueForKey:@"query"] valueForKey:@"results"];
+  dict = [[dict valueForKey:@"places"] valueForKey:@"place"];
+  return [[dict valueForKey:@"woeid"] intValue];
 }
 
 + (int) WOEIDForLocation:(CLLocation *)location

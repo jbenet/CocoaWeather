@@ -2,7 +2,7 @@
 #import "CWAPI.h"
 #import <Foundation/Foundation.h>
 
-@interface CWGoogleAPI : CWAPI {
+@interface CWGoogleAPI : CWAPI <NSXMLParserDelegate> {
 
   CWWeather *parsed;
   BOOL inCurrentConditions;
