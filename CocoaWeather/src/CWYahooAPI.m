@@ -79,6 +79,8 @@ static CWYahooAPI *yahoo_singleton = nil;
   id woeid = [dict valueForKey:@"woeid"];
   if ([woeid isKindOfClass:[NSNumber class]])
     return [woeid intValue];
+  else if ([woeid isKindOfClass:[NSString class]])
+    return [woeid intValue];
   return 0;
 }
 
