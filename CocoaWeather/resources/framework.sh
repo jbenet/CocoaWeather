@@ -1,27 +1,18 @@
-# Define these to suit your nefarious purposes
                  FRAMEWORK_NAME=CocoaWeather
               FRAMEWORK_VERSION=A
       FRAMEWORK_CURRENT_VERSION=1
 FRAMEWORK_COMPATIBILITY_VERSION=1
                      BUILD_TYPE=Release
 
-# Where we'll put the build framework.
-# The script presumes we're in the project root
-# directory. Xcode builds in "build" by default
-FRAMEWORK_BUILD_PATH="build/Framework"
 
-# This is the full name of the framework we'll
-# build
+FRAMEWORK_BUILD_PATH="build/Framework"
 FRAMEWORK_DIR=$FRAMEWORK_BUILD_PATH/$FRAMEWORK_NAME.framework
 
-# Clean any existing framework that might be there
-# already
-echo "Framework: Cleaning framework..."
 
+echo "Framework: Cleaning framework..."
 rm -rf $FRAMEWORK_DIR/*
 
-# Build the canonical Framework bundle directory
-# structure
+# Build the canonical Framework bundle directory structure
 echo "Framework: Setting up directories..."
 mkdir -p $FRAMEWORK_DIR
 mkdir -p $FRAMEWORK_DIR/Versions
@@ -35,19 +26,11 @@ ln -s Versions/Current/Headers $FRAMEWORK_DIR/Headers
 ln -s Versions/Current/Resources $FRAMEWORK_DIR/Resources
 ln -s Versions/Current/$FRAMEWORK_NAME $FRAMEWORK_DIR/$FRAMEWORK_NAME
 
-# Check that this is what your static libraries
-# are called
+# Check that this is what your static libraries are called
 FRAMEWORK_INPUT_ARM_FILES="build/$BUILD_TYPE-iphoneos/libCocoaWeather.a"
 FRAMEWORK_INPUT_I386_FILES="build/$BUILD_TYPE-iphonesimulator/libCocoaWeather.a"
 
-# The trick for creating a fully usable library is
-# to use lipo to glue the different library
-# versions together into one file. When an
-# application is linked to this library, the
-# linker will extract the appropriate platform
-# version and use that.
-# The library file is given the same name as the
-# framework with no .a extension.
+# to use lipo to glue the different library versions together into one library
 echo "Framework: Creating library..."
 lipo \
   -create \
@@ -55,8 +38,7 @@ lipo \
   -arch i386 "$FRAMEWORK_INPUT_I386_FILES" \
   -o "$FRAMEWORK_DIR/Versions/Current/$FRAMEWORK_NAME"
 
-# Now copy the final assets over: your library
-# header files and the plist file
+# Copy assets into framework structure.
 echo "Framework: Copying assets into current version..."
 cp include/$FRAMEWORK_NAME/* $FRAMEWORK_DIR/Headers/
 cp Resources/Framework.plist $FRAMEWORK_DIR/Resources/Info.plist
