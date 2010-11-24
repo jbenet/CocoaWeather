@@ -13,5 +13,5 @@ CocoaWeather is released under the MIT License.
 
 ## TODO:
 -   Fix CWGoogleAPI
--   Add CWWUndergroundAPI
+-   Add CWWundergroundAPI (http://www.wunderground.com/)
 -   Refactor include structure
