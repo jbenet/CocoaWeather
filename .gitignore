@@ -1,9 +1,5 @@
-*.pyc
-gaedrone/Crypto
 build/
-idrone/idrone.xcodeproj/jbenet.mode1v3
-idrone/idrone.xcodeproj/jbenet.pbxuser
-jbenet.mode1v3
-jbenet.pbxuser
+*.mode1v3
+*.pbxuser
 .DS_STORE/
 
