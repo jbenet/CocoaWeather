@@ -53,9 +53,9 @@
 		D948852011A15F23007BC8E7 /* CWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D948843211A0E300007BC8E7 /* CWCache.m */; };
 		D948854811A1617C007BC8E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D948854711A1617C007BC8E7 /* CoreGraphics.framework */; };
 		D986AF3D120CDBD800A07D0D /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3B120CDBD800A07D0D /* GHUnitIOS.framework */; };
-		D986AF3E120CDBD800A07D0D /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */; };
-		D986AF65120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */; };
-		D986AF66120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */; };
+		D986AF3E120CDBD800A07D0D /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJL.framework */; };
+		D986AF65120CDBEF00A07D0D /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJL.framework */; };
+		D986AF66120CDBEF00A07D0D /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AF3C120CDBD800A07D0D /* YAJL.framework */; };
 		D9A2E52811A6637100F7FA51 /* Locator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E52711A6637100F7FA51 /* Locator.m */; };
 		D9A2E73A11A7566300F7FA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2E73911A7566300F7FA51 /* CoreLocation.framework */; };
 		D9A2E7CC11AACFF700F7FA51 /* CWAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A2E7C811AACFF700F7FA51 /* CWAPI.h */; };
@@ -117,7 +117,7 @@
 		D948853611A15FBC007BC8E7 /* Tests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests_Prefix.pch; sourceTree = "<group>"; };
 		D948854711A1617C007BC8E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D986AF3B120CDBD800A07D0D /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
-		D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJLIPhone.framework; sourceTree = "<group>"; };
+		D986AF3C120CDBD800A07D0D /* YAJL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJL.framework; sourceTree = "<group>"; };
 		D9A2E52611A6637100F7FA51 /* Locator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locator.h; sourceTree = "<group>"; };
 		D9A2E52711A6637100F7FA51 /* Locator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locator.m; sourceTree = "<group>"; };
 		D9A2E73911A7566300F7FA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -137,7 +137,7 @@
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				D9A2E95411AAF93600F7FA51 /* CoreLocation.framework in Frameworks */,
-				D986AF66120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */,
+				D986AF66120CDBEF00A07D0D /* YAJL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 			files = (
 				D948835311A0CFB1007BC8E7 /* Foundation.framework in Frameworks */,
 				D9A2E95511AAF93700F7FA51 /* CoreLocation.framework in Frameworks */,
-				D986AF65120CDBEF00A07D0D /* YAJLIPhone.framework in Frameworks */,
+				D986AF65120CDBEF00A07D0D /* YAJL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +161,7 @@
 				D948854811A1617C007BC8E7 /* CoreGraphics.framework in Frameworks */,
 				D9A2E73A11A7566300F7FA51 /* CoreLocation.framework in Frameworks */,
 				D986AF3D120CDBD800A07D0D /* GHUnitIOS.framework in Frameworks */,
-				D986AF3E120CDBD800A07D0D /* YAJLIPhone.framework in Frameworks */,
+				D986AF3E120CDBD800A07D0D /* YAJL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				D986AF3B120CDBD800A07D0D /* GHUnitIOS.framework */,
-				D986AF3C120CDBD800A07D0D /* YAJLIPhone.framework */,
+				D986AF3C120CDBD800A07D0D /* YAJL.framework */,
 				D9A2E52611A6637100F7FA51 /* Locator.h */,
 				D9A2E52711A6637100F7FA51 /* Locator.m */,
 			);
@@ -373,7 +373,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CocoaWeather" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* CocoaWeather */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -523,7 +530,7 @@
 					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
 				);
 				PRODUCT_NAME = CocoaWeather;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -554,7 +561,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -606,7 +613,7 @@
 					"\"$(SRCROOT)/lib/libYAJLIPhone-0.2.17\"",
 				);
 				PRODUCT_NAME = CocoaWeather;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

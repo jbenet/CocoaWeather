@@ -1,7 +1,7 @@
 
 #import "CWYahooAPI.h"
 #import "CWWeather.h"
-#import <YAJLIPhone/YAJL.h>
+#import <YAJL/YAJL.h>
 #import <CoreLocation/CoreLocation.h>
 
 static NSString *kAPI = @"http://weather.yahooapis.com/forecastjson?u=c&";
