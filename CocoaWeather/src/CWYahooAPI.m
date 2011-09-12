@@ -6,7 +6,9 @@
 
 static NSString *kAPI = @"http://weather.yahooapis.com/forecastjson?u=c&";
 
-static NSString *kWOEID_LATLON_API = @"http://query.yahooapis.com/v1/public/yql?format=json&q=select%%20*%%20from%%20flickr.places%%20where%%20lat%%3D%f%%20and%%20lon%%3D%f";
+static NSString *kWOEID_LATLON_API =
+  @"http://where.yahooapis.com/geocode?q=%f,%f&flags=J&gflags=R";
+
 
 static CWYahooAPI *yahoo_singleton = nil;
 
@@ -73,9 +75,23 @@ static CWYahooAPI *yahoo_singleton = nil;
                     coordinate.latitude, coordinate.longitude];
   NSString *res = [NSString stringWithContentsOfURL:[NSURL URLWithString:url]
                             encoding:NSUTF8StringEncoding error:NULL];
+
   NSDictionary *dict = [res yajl_JSON];
-  dict = [[dict valueForKey:@"query"] valueForKey:@"results"];
-  dict = [[dict valueForKey:@"places"] valueForKey:@"place"];
+  if (!dict || ![dict isKindOfClass:[NSDictionary class]])
+    return 0;
+
+  dict = [dict valueForKey:@"ResultSet"];
+  if (!dict || ![dict isKindOfClass:[NSDictionary class]])
+    return 0;
+
+  NSArray *array = [dict valueForKey:@"Results"];
+  if (!array || ![array isKindOfClass:[NSArray class]] || [array count] < 1)
+    return 0;
+
+  dict = [array objectAtIndex:0];
+  if (!dict || ![dict isKindOfClass:[NSDictionary class]])
+    return 0;
+
   id woeid = [dict valueForKey:@"woeid"];
   if ([woeid isKindOfClass:[NSNumber class]])
     return [woeid intValue];
