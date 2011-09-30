@@ -34,8 +34,8 @@
 - (void) testSimLocation {
 
   [[Locator singleton] startUpdatingLocation];
-  CLLocation *loc = [[Locator singleton] waitForAccurateLocation];
-  NSLog(@"Location: %@", loc);
+//  CLLocation *loc = [[Locator singleton] waitForAccurateLocation];
+//  NSLog(@"Location: %@", loc);
 }
 
 

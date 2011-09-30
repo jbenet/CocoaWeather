@@ -12,7 +12,9 @@ static const float kACCURATE = 120; // in seconds. how long to CLLocationManager
 static const float kSTALE = 600; // in seconds.
 static const float kREADS = 6; // number of readings that constitute accuracy
 
-static const BOOL DEBUG = YES;
+#ifndef DEBUG
+#define DEBUG (true)
+#endif
 
 static BOOL initialized = NO;
 static Locator *singleton = nil;
@@ -73,12 +75,12 @@ static Locator *singleton = nil;
   return self;
 }
 
-- (unsigned)retainCount
+- (NSUInteger) retainCount
 {
   return UINT_MAX;  //denotes an object that cannot be released
 }
 
-- (void)release
+- (oneway void)release
 {
     //do nothing
 }
@@ -135,7 +137,7 @@ static Locator *singleton = nil;
     [self stopUpdatingHeading];
 }
 
-- (void) locationManager:(CLLocationManager *)manager
+- (void) locationManager:(CLLocationManager *)_manager
      didUpdateToLocation:(CLLocation *)newLocation
             fromLocation:(CLLocation *)oldLocation
 {
@@ -192,7 +194,7 @@ static Locator *singleton = nil;
 
 - (BOOL) metricsAreAccurate:(LocatorMetrics)metric
 {
-  BOOL accurate = (metric.errors > kREADS || metric.updates > kREADS);
+  BOOL accurate = (metric.updates > kREADS);
   if (accurate && DEBUG)
     NSLog(@"Metrics are accurate!");
   return accurate;
@@ -204,11 +206,11 @@ static Locator *singleton = nil;
 - (void) startUpdatingLocation
 {
   [self staleCheckMetrics:locationMetrics];
-  DebugLog(@"lse %@", (self.manager.locationServicesEnabled ? @"YES" : @"NO"));
-  DebugLog(@" %@ == %@", self.manager.delegate, self);
+//  DebugLog(@"lse %@", (self.manager.locationServicesEnabled ? @"YES" : @"NO"));
+//  DebugLog(@" %@ == %@", self.manager.delegate, self);
   [self.manager startUpdatingLocation];
-  DebugLog(@" %@ == %@", self.manager.delegate, self);
-  DebugLog(@"%@ delegate of %@", self.manager.delegate, self.manager);
+//  DebugLog(@" %@ == %@", self.manager.delegate, self);
+//  DebugLog(@"%@ delegate of %@", self.manager.delegate, self.manager);
   if (waitingToStopLocation)
     return;
 
